@@ -11,3 +11,5 @@ FILE_NAME=$(basename ${URL})
 wget -P ${LANDING_DIR} ${URL}
 
 ${HADOOP_BIN} dfs -put ${LANDING_DIR}/${FILE_NAME} ${INGEST_DIR}
+
+rm -f ${LANDING_DIR}/${FILE_NAME}
