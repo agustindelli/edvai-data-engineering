@@ -23,7 +23,7 @@ result_1 = spark.sql("""
     INNER JOIN results r ON r.driverId = d.driverId AND CAST(r.points AS FLOAT) > 0
     GROUP BY d.forename, d.surname, d.nationality
     ORDER BY points DESC
-    LMIT 20
+    LIMIT 20
 """)
 
 df_constructors.createOrReplaceTempView("constructors")
