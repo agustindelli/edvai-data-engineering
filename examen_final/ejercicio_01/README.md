@@ -146,6 +146,7 @@ LOCATION '/tables/external/aeropuerto_detalles_tabla';
 
 ####  3. Realizar un proceso automático orquestado por airflow que ingeste los archivos previamente mencionados entre las fechas 01/01/2021 y 30/06/2022 en las dos columnas creadas. 
 Los archivos 202206-informe-ministerio.csv y 202206-informe-ministerio.csv → en la tabla aeropuerto_tabla.
+
 El archivo aeropuertos_detalle.csv → en la tabla aeropuerto_detalles_tabla.
 
 `aviacion_etl_dag.py`
