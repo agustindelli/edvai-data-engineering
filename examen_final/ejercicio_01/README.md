@@ -297,7 +297,8 @@ spark.stop()
 #### 6. Determinar la cantidad de vuelos entre las fechas 01/12/2021 y 31/01/2022. Mostrar consulta y Resultado de la query.
 
 ```sql
-SELECT COUNT(1) AS vuelos
+SELECT
+	COUNT(1) AS vuelos
 FROM aeropuerto_tabla
 WHERE
 	tipo_de_movimiento = 'Despegue'
@@ -308,7 +309,8 @@ WHERE
 #### 7. Cantidad de pasajeros que viajaron en Aerolíneas Argentinas entre el 01/01/2021 y 30/06/2022. Mostrar consulta y Resultado de la query.
 
 ```sql
-SELECT SUM(pasajeros) AS pasajeros
+SELECT
+	SUM(pasajeros) AS pasajeros
 FROM aeropuerto_tabla
 WHERE 
 	tipo_de_movimiento = 'Despegue'
@@ -341,7 +343,9 @@ ORDER BY a.fecha DESC;
 #### 9. Cuales son las 10 aerolíneas que más pasajeros llevaron entre el 01/01/2021 y el 30/06/2022 exceptuando aquellas aerolíneas que no tengan nombre. Mostrar consulta y Visualización.
 
 ```sql
-SELECT aerolinea_nombre, SUM(pasajeros) AS pasajeros
+SELECT
+	aerolinea_nombre,
+	SUM(pasajeros) AS pasajeros
 FROM aeropuerto_tabla
 WHERE 
 	tipo_de_movimiento = 'Despegue'
@@ -356,7 +360,9 @@ LIMIT 10;
 #### 10. Cuales son las 10 aeronaves más utilizadas entre el 01/01/2021 y el 30/06/22 que despegaron desde la Ciudad autónoma de Buenos Aires o de Buenos Aires, exceptuando aquellas aeronaves que no cuentan con nombre. Mostrar consulta y Visualización.
 
 ```sql
-SELECT a.aeronave, COUNT(1) AS usos
+SELECT
+	a.aeronave,
+	COUNT(1) AS usos
 FROM aeropuerto_tabla a
 INNER JOIN aeropuerto_detalles_tabla ad ON ad.aeropuerto = a.aeropuerto
 WHERE
