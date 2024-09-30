@@ -315,7 +315,7 @@ WHERE
 	AND fecha BETWEEN '2021-01-01' AND '2022-06-30'
 	AND aerolinea_nombre = 'AEROLINEAS ARGENTINAS SA';
 ```
-![alt text](![alt text](https://github.com/agustindelli/edvai-data-engineering/blob/main/examen_final/ejercicio_01/captures/7.png))
+![alt text](https://github.com/agustindelli/edvai-data-engineering/blob/main/examen_final/ejercicio_01/captures/7.png)
 
 #### 8. Mostrar fecha, hora, código aeropuerto salida, ciudad de salida, código de aeropuerto de arribo, ciudad de arribo, y cantidad de pasajeros de cada vuelo, entre el 01/01/2022 y el 30/06/2022 ordenados por fecha de manera descendiente. Mostrar consulta y Resultado de la query.
 
@@ -336,7 +336,7 @@ WHERE
 	AND a.fecha BETWEEN '2022-01-01' AND '2022-06-30'	 
 ORDER BY a.fecha DESC;
 ```
-![alt text](![alt text](https://github.com/agustindelli/edvai-data-engineering/blob/main/examen_final/ejercicio_01/captures/8.png))
+![alt text](https://github.com/agustindelli/edvai-data-engineering/blob/main/examen_final/ejercicio_01/captures/8.png)
 
 #### 9. Cuales son las 10 aerolíneas que más pasajeros llevaron entre el 01/01/2021 y el 30/06/2022 exceptuando aquellas aerolíneas que no tengan nombre. Mostrar consulta y Visualización.
 
@@ -351,7 +351,7 @@ GROUP BY aerolinea_nombre
 ORDER BY a.fecha DESC, a.horautc DESC;
 LIMIT 10;
 ```
-![alt text](![alt text](https://github.com/agustindelli/edvai-data-engineering/blob/main/examen_final/ejercicio_01/captures/9.png))
+![alt text](https://github.com/agustindelli/edvai-data-engineering/blob/main/examen_final/ejercicio_01/captures/9.png)
 
 #### 10. Cuales son las 10 aeronaves más utilizadas entre el 01/01/2021 y el 30/06/22 que despegaron desde la Ciudad autónoma de Buenos Aires o de Buenos Aires, exceptuando aquellas aeronaves que no cuentan con nombre. Mostrar consulta y Visualización.
 
@@ -368,7 +368,7 @@ GROUP BY a.aeronave
 ORDER BY usos DESC
 LIMIT 10;
 ```
-![alt text](![alt text](https://github.com/agustindelli/edvai-data-engineering/blob/main/examen_final/ejercicio_01/captures/10.png))
+![alt text](https://github.com/agustindelli/edvai-data-engineering/blob/main/examen_final/ejercicio_01/captures/10.png)
 
 #### 11. Qué datos externos agregaría en este dataset que mejoraría el análisis de los datos.
 Se podría incluir un número de vuelo que facilite la determinación de la consistencia entre despegues y aterrizajes. Además, sería útil incluir la matrícula para no limitarse únicamente al tipo de aeronave, lo que permitirá un análisis más preciso del rendimiento de cada avión en particular. Otro dato que generaría valor es incorporar un campo que refleje si el vuelo se realizó en tiempo estimado o no.
