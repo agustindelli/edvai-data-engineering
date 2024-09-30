@@ -51,6 +51,6 @@ WHERE
 	AND a.fecha BETWEEN '2021-01-01' AND '2022-06-30'
 	AND a.aeronave != '0'
 	AND ad.provincia LIKE '%BUENOS AIRES%'
-GROUP BY a.aeronave
+	GROUP BY a.aeronave
 ORDER BY usos DESC
 LIMIT 10;

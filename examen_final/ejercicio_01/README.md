@@ -358,6 +358,8 @@ LIMIT 10;
 ```
 ![alt text](https://github.com/agustindelli/edvai-data-engineering/blob/main/examen_final/ejercicio_01/captures/9.png)
 
+![alt text](https://github.com/agustindelli/edvai-data-engineering/blob/main/examen_final/ejercicio_01/captures/9_graphs.png)
+
 #### 10. Cuales son las 10 aeronaves más utilizadas entre el 01/01/2021 y el 30/06/22 que despegaron desde la Ciudad autónoma de Buenos Aires o de Buenos Aires, exceptuando aquellas aeronaves que no cuentan con nombre. Mostrar consulta y Visualización.
 
 ```sql
@@ -376,6 +378,8 @@ ORDER BY usos DESC
 LIMIT 10;
 ```
 ![alt text](https://github.com/agustindelli/edvai-data-engineering/blob/main/examen_final/ejercicio_01/captures/10.png)
+
+![alt text](https://github.com/agustindelli/edvai-data-engineering/blob/main/examen_final/ejercicio_01/captures/10_graphs.png)
 
 #### 11. Qué datos externos agregaría en este dataset que mejoraría el análisis de los datos.
 Se podría incluir un número de vuelo que facilite la determinación de la consistencia entre despegues y aterrizajes. Además, sería útil incluir la matrícula para no limitarse únicamente al tipo de aeronave, lo que permitirá un análisis más preciso del rendimiento de cada avión en particular. Otro dato que generaría valor es incorporar un campo que refleje si el vuelo se realizó en tiempo estimado o no.

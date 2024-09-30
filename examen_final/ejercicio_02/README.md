@@ -85,11 +85,11 @@ rm -f ${LANDING_DIR}/*
 ```
 
 #### 3. Crear un script para tomar el archivo desde HDFS y hacer las siguientes transformaciones:
-- Endondeseanecesario, modificar los nombres de las columnas. Evitar espacios y puntos (reemplazar por _ ). Evitar nombres de columna largos
+- En donde sea necesario, modificar los nombres de las columnas. Evitar espacios y puntos (reemplazar por _ ). Evitar nombres de columna largos
 - Redondear los float de 'rating' y castear a int.
-- Joinearambosfiles
-- Eliminarlosregistros con rating nulo
-- Cambiarmayúsculaspor minúsculas en 'fuelType'
+- Joinear ambos files
+- Eliminar los registros con rating nulo
+- Cambiar mayúsculas por minúsculas en 'fuelType'
 - Excluir el estado Texas
   
 `transform_car_rental.py`
@@ -258,7 +258,9 @@ ORDER BY alquileres
 LIMIT 5;
 ```
 ![alt text](https://github.com/agustindelli/edvai-data-engineering/blob/main/examen_final/ejercicio_02/captures/5b.png)
-  
+
+![alt text](https://github.com/agustindelli/edvai-data-engineering/blob/main/examen_final/ejercicio_02/captures/5b_graphs.png)
+
 - Los 10 modelos (junto con su marca) de autos más rentados (mostrar query y visualización)
 
 ```sql
@@ -272,6 +274,8 @@ ORDER BY alquileres DESC
 LIMIT 10;
 ```
 ![alt text](https://github.com/agustindelli/edvai-data-engineering/blob/main/examen_final/ejercicio_02/captures/5c.png)
+
+![alt text](https://github.com/agustindelli/edvai-data-engineering/blob/main/examen_final/ejercicio_02/captures/5c_graphs.png)
 
 - Mostrar por año, cuántos alquileres se hicieron, teniendo en cuenta automóviles fabricados desde 2010 a 2015
 
