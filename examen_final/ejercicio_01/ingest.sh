@@ -6,8 +6,8 @@ INGEST_DIR="/ingest"
 HADOOP_BIN="/home/hadoop/hadoop/bin/hdfs"
 
 URL1="https://dataengineerpublic.blob.core.windows.net/data-engineer/2021-informe-ministerio.csv"
-URL2=" https://dataengineerpublic.blob.core.windows.net/data-engineer/202206-informe-ministerio.csv"
-URL3=" https://dataengineerpublic.blob.core.windows.net/data-engineer/aeropuertos_detalle.csv"
+URL2="https://dataengineerpublic.blob.core.windows.net/data-engineer/202206-informe-ministerio.csv"
+URL3="https://dataengineerpublic.blob.core.windows.net/data-engineer/aeropuertos_detalle.csv"
 
 rm -f ${LANDING_DIR}/*
 
