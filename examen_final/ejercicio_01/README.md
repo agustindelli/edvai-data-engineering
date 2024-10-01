@@ -34,8 +34,8 @@ INGEST_DIR="/ingest"
 HADOOP_BIN="/home/hadoop/hadoop/bin/hdfs"
 
 URL1="https://dataengineerpublic.blob.core.windows.net/data-engineer/2021-informe-ministerio.csv"
-URL2=" https://dataengineerpublic.blob.core.windows.net/data-engineer/202206-informe-ministerio.csv"
-URL3=" https://dataengineerpublic.blob.core.windows.net/data-engineer/aeropuertos_detalle.csv"
+URL2="https://dataengineerpublic.blob.core.windows.net/data-engineer/202206-informe-ministerio.csv"
+URL3="https://dataengineerpublic.blob.core.windows.net/data-engineer/aeropuertos_detalle.csv"
 
 rm -f ${LANDING_DIR}/*
 
@@ -203,8 +203,8 @@ with DAG(
 - Eliminar la columna fir ya que no se utilizará para el análisis
 - Eliminar la columna “calidad del dato” ya que no se utilizará para el análisis
 - Filtrar los vuelos internacionales ya que solamente se analizarán los vuelos domésticos
-- En elcampopasajeros si se encuentran campos en Null convertirlos en 0 (cero)
-- En elcampodistancia_ref si se encuentran campos en Null convertirlos en 0 (cero)
+- En el campo pasajeros si se encuentran campos en Null convertirlos en 0 (cero)
+- En el campo distancia_ref si se encuentran campos en Null convertirlos en 0 (cero)
 
 `transform_1.py`
 
